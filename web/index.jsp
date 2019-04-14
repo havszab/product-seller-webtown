@@ -10,11 +10,12 @@
 <%--@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" --%>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Vásárlás</title>
 </head>
 
 <body>
-<form action="/products" method="get">
+<form action="products" method="get">
     <table>
         <th>Megnevezés</th>
         <th>Ár</th>
@@ -36,7 +37,7 @@
 
             </td>
             <td>
-                <input type="number" min="0" value="0" name="Fogkrém">
+                <input type="number" min="0" name="Fogkrém">
             </td>
         </tr>
         <tr>
@@ -177,7 +178,7 @@
         </tr>
         </tbody>
     </table>
-    <button type="submit">Buy items</button>
+    <button type="submit">Termékek megvásárlása</button>
 </form>
 </body>
 </html>

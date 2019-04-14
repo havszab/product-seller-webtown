@@ -7,7 +7,7 @@ import java.util.List;
 public class ShoppingCart {
 
     private static final String[] threeForTwoNames = {"Fogkrém", "Pomelo", "Lazacfilé"};
-    private static final String[] megapackNames = {"Gomolya sajt", "Papyrtörlő", "Mikulás-csomag"};
+    private static final String[] megapackNames = {"Gomolya sajt", "Papírtörlő", "Mikulás-csomag"};
 
     private String megapackType = "Megapack";
     private String threeForTwoType = "2=3";
@@ -17,6 +17,8 @@ public class ShoppingCart {
 
     private String discountType;
 
+    private int defaultValue;
+
     private List<Product> products;
 
     public ShoppingCart() {
@@ -24,6 +26,9 @@ public class ShoppingCart {
 
     public ShoppingCart(List<Product> products) {
         this.products = products;
+        this.discValue = getDiscountedPriceForProducts();
+        this.discountType = getDiscountType();
+        this.defaultValue = getDefaultPrice();
     }
 
     public int getDefaultPrice() {
@@ -34,7 +39,7 @@ public class ShoppingCart {
         return simplePrice;
     }
 
-    public int getDiscountedPriceForProducts() {
+    private int getDiscountedPriceForProducts() {
         int priceIf2is3 = 0;
         int priceIfMega = 0;
         int simplePrice = 0;
@@ -42,6 +47,7 @@ public class ShoppingCart {
             simplePrice += prod.getPrice() * prod.getQuantity();
             priceIf2is3 += get3for2value(prod);
             priceIfMega += getMegapackValue(prod);
+            System.out.println("Prices: " + simplePrice + " " + priceIf2is3 + " " + priceIfMega);
         }
         if (priceIf2is3 == simplePrice && priceIfMega == simplePrice) {
             this.discountType = noDiscType;
@@ -58,7 +64,7 @@ public class ShoppingCart {
     private int get3for2value(Product product) {
         discValue = product.getPrice() * product.getQuantity();
         if (Arrays.asList(threeForTwoNames).contains(product.getName()) && product.getQuantity() >= 3) {
-            discValue -= (product.getQuantity()%3)*product.getPrice();
+            discValue -= product.getQuantity()/3*product.getPrice();
         }
         return discValue;
     }
@@ -66,7 +72,7 @@ public class ShoppingCart {
     private int getMegapackValue(Product product) {
         discValue = product.getPrice() * product.getQuantity();
         if (Arrays.asList(megapackNames).contains(product.getName()) && product.getQuantity() >= 12) {
-            discValue -= (product.getQuantity()%12)*6000;
+            discValue -= (product.getQuantity()/12)*6000;
         }
         return Math.max(discValue, 0);
     }
@@ -86,5 +92,13 @@ public class ShoppingCart {
 
     public String getDiscountType() {
         return discountType;
+    }
+
+    public int getDefaultValue() {
+        return defaultValue;
+    }
+
+    public void setDefaultValue(int defaultValue) {
+        this.defaultValue = defaultValue;
     }
 }

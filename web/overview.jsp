@@ -14,12 +14,9 @@
 </head>
 
 <body>
-<form action="/products" method="get">
     <table>
         <th>Megnevezés</th>
         <th>Ár</th>
-        <th>2=3</th>
-        <th>Megapack</th>
         <th>Mennyiség</th>
         <tbody>
         <tr>
@@ -30,13 +27,7 @@
                 1195
             </td>
             <td>
-                X
-            </td>
-            <td>
-
-            </td>
-            <td>
-                <input type="number" min="0" value="0" name="Fogkrém">
+                ${toothpaste}
             </td>
         </tr>
         <tr>
@@ -47,13 +38,7 @@
                 349
             </td>
             <td>
-                X
-            </td>
-            <td>
-
-            </td>
-            <td>
-                <input type="number" min="0" name="Pomelo">
+                ${pomelo}
             </td>
         </tr>
         <tr>
@@ -64,13 +49,7 @@
                 1290
             </td>
             <td>
-                X
-            </td>
-            <td>
-
-            </td>
-            <td>
-                <input type="number" min="0" name="Lazacfilé">
+                ${salmon}
             </td>
         </tr>
         <tr>
@@ -81,10 +60,7 @@
                 2290
             </td>
             <td>
-
-            </td>
-            <td>
-                <input type="number" min="0" name="Gomolya sajt">
+                ${cheese}
             </td>
         </tr>
         <tr>
@@ -95,10 +71,7 @@
                 449
             </td>
             <td>
-
-            </td>
-            <td>
-                <input type="number" min="0" name="Papírtörlő">
+                ${towel}
             </td>
         </tr>
         <tr>
@@ -109,11 +82,7 @@
                 1499
             </td>
             <td>
-
-            </td>
-
-            <td>
-                <input type="number" min="0" name="Mikulás-csomag">
+                ${pack}
             </td>
         </tr>
         <tr>
@@ -124,11 +93,7 @@
                 289
             </td>
             <td>
-
-            </td>
-
-            <td>
-                <input type="number" min="0" name="Tej">
+                ${milk}
             </td>
         </tr>
         <tr>
@@ -139,11 +104,7 @@
                 329
             </td>
             <td>
-
-            </td>
-
-            <td>
-                <input type="number" min="0" name="Száraztészta">
+                ${joghurt}
             </td>
         </tr>
         <tr>
@@ -154,15 +115,13 @@
                 599
             </td>
             <td>
-
-            </td>
-            <td>
-                <input type="number" min="0" name="Száraztészta">
+                ${pasta}
             </td>
         </tr>
         </tbody>
     </table>
-    <button type="submit">Buy items</button>
-</form>
+    <p>Eredeti ár: ${defaultPrice} Ft</p>
+    <p>Kedvezményes ár: ${discountedPrice} Ft</p>
+    <p>Kedvezmény típusa: ${type} </p>
 </body>
 </html>

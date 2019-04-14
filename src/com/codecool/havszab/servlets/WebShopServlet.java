@@ -5,6 +5,7 @@ import com.codecool.havszab.DAO.ProductDAO;
 import com.codecool.havszab.model.Product;
 import com.codecool.havszab.model.ShoppingCart;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,8 +19,7 @@ public class WebShopServlet extends HttpServlet {
 
     private ProductDAO productDAO = new ProductDAOImpl();
 
-    public void doPost(HttpServletRequest request, HttpServletResponse response) {
-        System.out.println(request.getParameter("Fogkrém"));
+    public WebShopServlet() {
     }
 
 
@@ -54,13 +54,33 @@ public class WebShopServlet extends HttpServlet {
         Product pasta = new Product("Száraztészta", 599, readQuantity(request, "Száraztészta"));
         boughtProducts.add(pasta);
 
-        System.out.println(boughtProducts);
 
         ShoppingCart cart = new ShoppingCart(boughtProducts);
-        cart.setDiscValue(cart.getDiscountedPriceForProducts());
-        System.out.println("Default price: " + cart.getDefaultPrice());
-        System.out.println(cart.getDiscountedPriceForProducts());
-        System.out.println(cart.getDiscountType());
+
+        int defaultPrice = cart.getDefaultPrice();
+        int discountedPrice = cart.getDiscValue();
+        String type = cart.getDiscountType();
+
+        System.out.println("Eredeti ár " + defaultPrice);
+        System.out.println("Kedvezményes ár: " + discountedPrice);
+        System.out.println("Kedvezmény típusa: " + type);
+
+        request.setAttribute("toothpaste", toothpaste.getQuantity());
+        request.setAttribute("pomelo", pomelo.getQuantity());
+        request.setAttribute("salmon", salmon.getQuantity());
+        request.setAttribute("cheese", cheese.getQuantity());
+        request.setAttribute("towel", towel.getQuantity());
+        request.setAttribute("pack", pack.getQuantity());
+        request.setAttribute("milk", milk.getQuantity());
+        request.setAttribute("joghurt", joghurt.getQuantity());
+        request.setAttribute("pasta", pasta.getQuantity());
+        request.setAttribute("defaultPrice", defaultPrice);
+        request.setAttribute("discountedPrice", discountedPrice);
+        request.setAttribute("type", type);
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("overview.jsp");
+        dispatcher.forward(request, response);
+
     }
 
     private int readQuantity(HttpServletRequest request, String name) {
