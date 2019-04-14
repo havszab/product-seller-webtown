@@ -13,14 +13,11 @@ public class ShoppingCart {
     private String threeForTwoType = "2=3";
     private String noDiscType = "nincs";
 
-    private int quantity;
-
     private int discValue;
 
     private String discountType;
 
     public ShoppingCart(int quantity) {
-        this.quantity = quantity;
     }
 
 
@@ -29,7 +26,7 @@ public class ShoppingCart {
         int priceIfMega = 0;
         int simplePrice = 0;
         for (Product prod : products) {
-            simplePrice += prod.getPrice() * quantity;
+            simplePrice += prod.getPrice() * prod.getQuantity();
             priceIf2is3 += get3for2value(prod);
             priceIfMega += getMegapackValue(prod);
         }
@@ -46,27 +43,19 @@ public class ShoppingCart {
     }
 
     private int get3for2value(Product product) {
-        discValue = product.getPrice() * quantity;
-        if (Arrays.asList(threeForTwoNames).contains(product.getName()) && quantity >= 3) {
-            discValue -= (quantity%3)*product.getPrice();
+        discValue = product.getPrice() * product.getQuantity();
+        if (Arrays.asList(threeForTwoNames).contains(product.getName()) && product.getQuantity() >= 3) {
+            discValue -= (product.getQuantity()%3)*product.getPrice();
         }
         return discValue;
     }
 
     private int getMegapackValue(Product product) {
-        discValue = product.getPrice() * quantity;
-        if (Arrays.asList(megapackNames).contains(product.getName()) && quantity >= 12) {
-            discValue -= (quantity%12)*6000;
+        discValue = product.getPrice() * product.getQuantity();
+        if (Arrays.asList(megapackNames).contains(product.getName()) && product.getQuantity() >= 12) {
+            discValue -= (product.getQuantity()%12)*6000;
         }
         return Math.max(discValue, 0);
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
     }
 
     public int getDiscValue() {

@@ -10,6 +10,8 @@ public class Product {
 
     private boolean hasMegapack;
 
+    private int quantity;
+
     public Product() {
     }
 
@@ -68,4 +70,11 @@ public class Product {
                 '}';
     }
 
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 }
