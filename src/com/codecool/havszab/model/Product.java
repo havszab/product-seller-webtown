@@ -52,4 +52,14 @@ public class Product {
     public void setHasMegapack(boolean hasMegapack) {
         this.hasMegapack = hasMegapack;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", hasThreeforTwo=" + hasThreeforTwo +
+                ", hasMegapack=" + hasMegapack +
+                '}';
+    }
 }
