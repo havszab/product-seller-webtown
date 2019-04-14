@@ -27,6 +27,7 @@ public class WebShopServlet extends HttpServlet {
 
         List<Product> boughtProducts = new ArrayList<>();
 
+
         Product toothpaste = new Product("Fogkrém", 1195, readQuantity(request, "Fogkrém"));
         boughtProducts.add(toothpaste);
 
