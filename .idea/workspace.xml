@@ -6,19 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e402f292-6aaa-4bfa-865d-bff581ff0b06" name="Default Changelist" comment="project state when time is up">
-      <change afterPath="$PROJECT_DIR$/../havszab/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../havszab/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../havszab/havszab.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../havszab/pom.xml" afterDir="false" />
+    <list default="true" id="e402f292-6aaa-4bfa-865d-bff581ff0b06" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/products.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/products.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codecool/havszab/model/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codecool/havszab/model/ShoppingCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codecool/havszab/servlets/WebShopServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codecool/havszab/servlets/WebShopServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/overview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/overview.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,7 +47,7 @@
           <entry key="dummy" value="7" />
           <entry key="java" value="3994" />
           <entry key="jsp" value="793" />
-          <entry key="txt" value="307" />
+          <entry key="txt" value="342" />
           <entry key="xml" value="93" />
         </counts>
       </usages-collector>
@@ -64,7 +55,7 @@
         <counts>
           <entry key="JAVA" value="3994" />
           <entry key="JSP" value="793" />
-          <entry key="PLAIN_TEXT" value="314" />
+          <entry key="PLAIN_TEXT" value="349" />
           <entry key="XML" value="93" />
         </counts>
       </usages-collector>
@@ -108,7 +99,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/codecool/havszab/model/ShoppingCart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
+            <state relative-caret-position="1110">
               <caret line="74" column="48" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -292,7 +283,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555252465053" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555253390947" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -411,7 +402,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555225285859</updated>
-      <workItem from="1555225287815" duration="20933000" />
+      <workItem from="1555225287815" duration="21264000" />
     </task>
     <task id="LOCAL-00001" summary="model and DAO classes created">
       <created>1555226304959</created>
@@ -462,11 +453,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555243361037</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added pom xml to generate war file">
+      <created>1555252506020</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1555252506020</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20933000" />
+    <option name="totallyTimeSpent" value="21264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -556,7 +554,8 @@
     <MESSAGE value="solution is logged" />
     <MESSAGE value="solution rendered on web" />
     <MESSAGE value="project state when time is up" />
-    <option name="LAST_COMMIT_MESSAGE" value="project state when time is up" />
+    <MESSAGE value="added pom xml to generate war file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added pom xml to generate war file" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/codecool/havszab/Main.java">
@@ -650,7 +649,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/codecool/havszab/model/ShoppingCart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
+        <state relative-caret-position="1110">
           <caret line="74" column="48" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />

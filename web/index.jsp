@@ -156,7 +156,7 @@
 
             </td>
             <td>
-                <input type="number" min="0" name="Száraztészta">
+                <input type="number" min="0" name="Joghurt">
             </td>
         </tr>
         <tr>
