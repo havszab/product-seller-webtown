@@ -10,8 +10,6 @@ public class Product {
 
     private boolean hasMegapack;
 
-    private int quantity;
-
     public Product() {
     }
 
@@ -20,6 +18,10 @@ public class Product {
         this.price = price;
         this.hasThreeforTwo = hasThreeforTwo;
         this.hasMegapack = hasMegapack;
+    }
+
+    public Product(String name) {
+        this.name = name;
     }
 
 
