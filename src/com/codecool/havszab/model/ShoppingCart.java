@@ -17,11 +17,24 @@ public class ShoppingCart {
 
     private String discountType;
 
-    public ShoppingCart(int quantity) {
+    private List<Product> products;
+
+    public ShoppingCart() {
     }
 
+    public ShoppingCart(List<Product> products) {
+        this.products = products;
+    }
 
-    public int getDiscountedPriceForProducts(List<Product> products) {
+    public int getDefaultPrice() {
+        int simplePrice = 0;
+        for (Product prod : products) {
+            simplePrice += prod.getPrice() * prod.getQuantity();
+        }
+        return simplePrice;
+    }
+
+    public int getDiscountedPriceForProducts() {
         int priceIf2is3 = 0;
         int priceIfMega = 0;
         int simplePrice = 0;
@@ -32,10 +45,10 @@ public class ShoppingCart {
         }
         if (priceIf2is3 == simplePrice && priceIfMega == simplePrice) {
             this.discountType = noDiscType;
-        } else if (priceIf2is3 > priceIfMega) {
+        } else if (priceIf2is3 < priceIfMega) {
             this.discountType = threeForTwoType;
             return priceIf2is3;
-        } else if (priceIfMega >= priceIf2is3) {
+        } else  {
             this.discountType = megapackType;
             return priceIfMega;
         }

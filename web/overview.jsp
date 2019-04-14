@@ -84,9 +84,6 @@
 
             </td>
             <td>
-                X
-            </td>
-            <td>
                 <input type="number" min="0" name="Gomolya sajt">
             </td>
         </tr>
@@ -99,9 +96,6 @@
             </td>
             <td>
 
-            </td>
-            <td>
-                X
             </td>
             <td>
                 <input type="number" min="0" name="Papírtörlő">
@@ -117,9 +111,7 @@
             <td>
 
             </td>
-            <td>
-                X
-            </td>
+
             <td>
                 <input type="number" min="0" name="Mikulás-csomag">
             </td>
@@ -134,9 +126,7 @@
             <td>
 
             </td>
-            <td>
 
-            </td>
             <td>
                 <input type="number" min="0" name="Tej">
             </td>
@@ -151,9 +141,7 @@
             <td>
 
             </td>
-            <td>
 
-            </td>
             <td>
                 <input type="number" min="0" name="Száraztészta">
             </td>
@@ -164,9 +152,6 @@
             </td>
             <td>
                 599
-            </td>
-            <td>
-
             </td>
             <td>
 

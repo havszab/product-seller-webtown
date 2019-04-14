@@ -29,9 +29,7 @@ public class ProductDAOImpl implements ProductDAO {
                 if (rowNum != 0) {
                     Product currentProduct = new Product(
                             currentLineContent.get(0),
-                            Integer.parseInt(currentLineContent.get(1)),
-                            currentLineContent.get(2).equals("X"),
-                            currentLineContent.get(3).equals("X")
+                            Integer.parseInt(currentLineContent.get(1))
                     );
                     products.add(currentProduct);
                 }

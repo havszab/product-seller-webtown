@@ -6,24 +6,21 @@ public class Product {
 
     private int price;
 
-    private boolean hasThreeforTwo;
-
-    private boolean hasMegapack;
-
     private int quantity;
 
     public Product() {
     }
 
-    public Product(String name, int price, boolean hasThreeforTwo, boolean hasMegapack) {
+
+    public Product(String name, int price, int quantity) {
         this.name = name;
         this.price = price;
-        this.hasThreeforTwo = hasThreeforTwo;
-        this.hasMegapack = hasMegapack;
+        this.quantity = quantity;
     }
 
-    public Product(String name) {
+    public Product(String name, int price) {
         this.name = name;
+        this.price = price;
     }
 
 
@@ -43,32 +40,6 @@ public class Product {
         this.price = price;
     }
 
-    public boolean isHasThreeforTwo() {
-        return hasThreeforTwo;
-    }
-
-    public void setHasThreeforTwo(boolean hasThreeforTwo) {
-        this.hasThreeforTwo = hasThreeforTwo;
-    }
-
-    public boolean isHasMegapack() {
-        return hasMegapack;
-    }
-
-    public void setHasMegapack(boolean hasMegapack) {
-        this.hasMegapack = hasMegapack;
-    }
-
-
-    @Override
-    public String toString() {
-        return "Product{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                ", hasThreeforTwo=" + hasThreeforTwo +
-                ", hasMegapack=" + hasMegapack +
-                '}';
-    }
 
     public int getQuantity() {
         return quantity;
