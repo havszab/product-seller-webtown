@@ -11,6 +11,13 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  <table>
+    <th>Megnevezés</th>
+    <th>Ár</th>
+    <th>2=3</th>
+    <th>Megapack</th>
+    <tbody>
+    </tbody>
+  </table>
   </body>
 </html>
