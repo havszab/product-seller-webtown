@@ -6,16 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e402f292-6aaa-4bfa-865d-bff581ff0b06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_servlet_jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codecool/havszab/model/ShoppingCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codecool/havszab/servlets/WebShopServlet.java" afterDir="false" />
+    <list default="true" id="e402f292-6aaa-4bfa-865d-bff581ff0b06" name="Default Changelist" comment="cart calculations fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-seller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/product-seller.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/products.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/products.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/codecool/havszab/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codecool/havszab/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codecool/havszab/servlets/ProductServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codecool/havszab/model/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codecool/havszab/model/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codecool/havszab/servlets/WebShopServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codecool/havszab/servlets/WebShopServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -52,17 +48,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="7" />
-          <entry key="java" value="2111" />
-          <entry key="jsp" value="572" />
-          <entry key="txt" value="101" />
+          <entry key="java" value="2647" />
+          <entry key="jsp" value="574" />
+          <entry key="txt" value="159" />
           <entry key="xml" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2111" />
-          <entry key="JSP" value="572" />
-          <entry key="PLAIN_TEXT" value="108" />
+          <entry key="JAVA" value="2647" />
+          <entry key="JSP" value="574" />
+          <entry key="PLAIN_TEXT" value="166" />
           <entry key="XML" value="49" />
         </counts>
       </usages-collector>
@@ -78,8 +74,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/index.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+                <state relative-caret-position="1905">
+                  <caret line="127" column="16" lean-forward="true" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -87,8 +83,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/codecool/havszab/servlets/WebShopServlet.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="173">
-                  <caret line="26" selection-start-line="26" selection-end-line="26" />
+                <state relative-caret-position="252">
+                  <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -99,26 +95,24 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/codecool/havszab/model/ShoppingCart.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+                <state relative-caret-position="367">
+                  <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#466#467#0" expanded="true" />
-                    <element signature="e#536#537#0" expanded="true" />
-                    <element signature="e#984#985#0" expanded="true" />
-                    <element signature="e#1052#1053#0" expanded="true" />
-                    <element signature="e#1376#1377#0" expanded="true" />
-                    <element signature="e#1407#1408#0" expanded="true" />
-                    <element signature="e#1452#1453#0" expanded="true" />
-                    <element signature="e#1492#1493#0" expanded="true" />
-                    <element signature="e#1525#1526#0" expanded="true" />
-                    <element signature="e#1557#1558#0" expanded="true" />
-                    <element signature="e#1604#1605#0" expanded="true" />
-                    <element signature="e#1646#1647#0" expanded="true" />
-                    <element signature="e#1681#1682#0" expanded="true" />
-                    <element signature="e#1711#1712#0" expanded="true" />
-                    <element signature="e#1758#1759#0" expanded="true" />
-                    <element signature="e#1796#1797#0" expanded="true" />
+                    <element signature="e#586#587#0" expanded="true" />
+                    <element signature="e#626#627#0" expanded="true" />
+                    <element signature="e#1701#1702#0" expanded="true" />
+                    <element signature="e#1732#1733#0" expanded="true" />
+                    <element signature="e#1777#1778#0" expanded="true" />
+                    <element signature="e#1817#1818#0" expanded="true" />
+                    <element signature="e#1850#1851#0" expanded="true" />
+                    <element signature="e#1882#1883#0" expanded="true" />
+                    <element signature="e#1929#1930#0" expanded="true" />
+                    <element signature="e#1971#1972#0" expanded="true" />
+                    <element signature="e#2032#2033#0" expanded="true" />
+                    <element signature="e#2080#2081#0" expanded="true" />
+                    <element signature="e#2119#2120#0" expanded="true" />
+                    <element signature="e#2154#2155#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -127,8 +121,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/codecool/havszab/model/Product.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="231">
-                  <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+                <state relative-caret-position="566">
+                  <caret line="58" selection-start-line="58" selection-end-line="58" />
                   <folding>
                     <element signature="e#499#500#0" expanded="true" />
                     <element signature="e#531#532#0" expanded="true" />
@@ -204,10 +198,10 @@
         <option value="$PROJECT_DIR$/src/com/codecool/havszab/Main.java" />
         <option value="$PROJECT_DIR$/src/com/codecool/havszab/servlets/ProductServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/com/codecool/havszab/DAO/Impl/ProductDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/codecool/havszab/servlets/WebShopServlet.java" />
         <option value="$PROJECT_DIR$/src/com/codecool/havszab/model/Product.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/com/codecool/havszab/servlets/WebShopServlet.java" />
         <option value="$PROJECT_DIR$/src/com/codecool/havszab/model/ShoppingCart.java" />
       </list>
     </option>
@@ -314,7 +308,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555237868590" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555239739031" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -431,7 +425,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555225285859</updated>
-      <workItem from="1555225287815" duration="11564000" />
+      <workItem from="1555225287815" duration="13507000" />
     </task>
     <task id="LOCAL-00001" summary="model and DAO classes created">
       <created>1555226304959</created>
@@ -454,11 +448,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555230290169</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="discount type calculations added">
+      <created>1555238461875</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555238461875</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11564000" />
+    <option name="totallyTimeSpent" value="13507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -470,18 +471,18 @@
       <window_info id="Favorites" sideWeight="0.14081633" side_tool="true" visible="true" weight="0.24959612" />
       <window_info id="Capture Tool" />
       <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.85918367" visible="true" weight="0.24959612" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.85918367" visible="true" weight="0.24959612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Application Servers" />
       <window_info anchor="bottom" id="Terminal" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.32876712" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -507,16 +508,11 @@
     <MESSAGE value="model and DAO classes created" />
     <MESSAGE value="read from csv implemented" />
     <MESSAGE value="simple template change, servlet file created" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple template change, servlet file created" />
+    <MESSAGE value="discount type calculations added" />
+    <MESSAGE value="cart calculations fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="cart calculations fixed" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/codecool/havszab/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -552,27 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/codecool/havszab/servlets/WebShopServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/codecool/havszab/model/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding>
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/products.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -580,28 +555,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/codecool/havszab/model/ShoppingCart.java">
+    <entry file="file://$PROJECT_DIR$/src/com/codecool/havszab/model/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+        <state relative-caret-position="566">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1905">
+          <caret line="127" column="16" lean-forward="true" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/codecool/havszab/servlets/WebShopServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1376#1377#0" expanded="true" />
-            <element signature="e#1407#1408#0" expanded="true" />
-            <element signature="e#1452#1453#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1525#1526#0" expanded="true" />
-            <element signature="e#1557#1558#0" expanded="true" />
-            <element signature="e#1604#1605#0" expanded="true" />
-            <element signature="e#1646#1647#0" expanded="true" />
-            <element signature="e#1681#1682#0" expanded="true" />
-            <element signature="e#1711#1712#0" expanded="true" />
-            <element signature="e#1758#1759#0" expanded="true" />
-            <element signature="e#1796#1797#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/codecool/havszab/model/ShoppingCart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#1701#1702#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1777#1778#0" expanded="true" />
+            <element signature="e#1817#1818#0" expanded="true" />
+            <element signature="e#1850#1851#0" expanded="true" />
+            <element signature="e#1882#1883#0" expanded="true" />
+            <element signature="e#1929#1930#0" expanded="true" />
+            <element signature="e#1971#1972#0" expanded="true" />
+            <element signature="e#2032#2033#0" expanded="true" />
+            <element signature="e#2080#2081#0" expanded="true" />
+            <element signature="e#2119#2120#0" expanded="true" />
+            <element signature="e#2154#2155#0" expanded="true" />
           </folding>
         </state>
       </provider>

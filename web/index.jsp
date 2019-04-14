@@ -121,7 +121,7 @@
                 X
             </td>
             <td>
-                <input type="number" min="0" name="Mikulás csomag">
+                <input type="number" min="0" name="Mikulás-csomag">
             </td>
         </tr>
         <tr>

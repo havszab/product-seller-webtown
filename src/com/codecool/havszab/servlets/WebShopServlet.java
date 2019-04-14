@@ -29,6 +29,7 @@ public class WebShopServlet extends HttpServlet {
         while (it.hasNext()) {
             Map.Entry prod = (Map.Entry) it.next();
             if (prod.getValue() != null) {
+                System.out.println(prod.getKey() + ": " +prod.getValue().toString());
                 //boughtProducts.add(new Product((String) prod.getKey(), Integer.parseInt((String) prod.getValue())));
             }
         }
